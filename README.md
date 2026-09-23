@@ -14,7 +14,4 @@ Full-page homepage screenshots of Studocu's main competitors, for visual change 
 `screenshots/<YYYY-MM-DD>/<domain>.png` — one full-page PNG per domain per capture. Browse any date's folder on GitHub to view images inline; compare two dates by opening both.
 
 ## How it's captured
-On-demand only, via `scripts/capture_screenshot.py` (Playwright + Chromium), run locally when asked — not on a schedule.
-
-## Known issues
-- **chegg.com** blocks headless browser automation (PerimeterX) — its screenshot shows an "Access to this page has been denied" page rather than the real homepage. This is intentional site-side bot protection and isn't something this project tries to bypass.
+On-demand only, via `scripts/capture_screenshot.py` (Playwright driving the real installed Chrome browser, headed mode), run locally when asked — not on a schedule.
